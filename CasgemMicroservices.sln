@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{73B117FC-A8CF-4CAF-9E8F-40125BFEEF51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{78E1C58A-1D55-4D9C-8863-E6710A8121DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{2C454A32-7D49-4D99-A4BD-9E12D7591A63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{461087B6-F445-4CEC-883F-C02F900AFB56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BAAFFA5A-0616-41D2-A2CE-570A3ED10E33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{64B85069-5BB6-4875-B8CF-107AD5F9496F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{F646E18A-A59F-4995-9BD2-63902699C4DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{E3227E52-5058-438C-942C-64B93E0EBB85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{743395A0-D9FE-4432-90F7-4FE550EDB39A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{92B22526-C33F-4EFB-B3A6-FF43CC08ED42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{33752672-EE67-4F8A-A9D3-76F8426B14CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{766E4074-94FF-4A63-9718-C6EB29F9FDFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{F93933FA-C429-4D78-BAB1-DA8E8BE96CFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Services.Catalog", "Services\Catalog\CasgemMicroservices.Services.Catalog\CasgemMicroservices.Services.Catalog.csproj", "{ACCED2C6-4392-4C5A-BFE1-373041BAADDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACCED2C6-4392-4C5A-BFE1-373041BAADDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACCED2C6-4392-4C5A-BFE1-373041BAADDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACCED2C6-4392-4C5A-BFE1-373041BAADDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACCED2C6-4392-4C5A-BFE1-373041BAADDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F646E18A-A59F-4995-9BD2-63902699C4DD} = {BAAFFA5A-0616-41D2-A2CE-570A3ED10E33}
+		{E3227E52-5058-438C-942C-64B93E0EBB85} = {BAAFFA5A-0616-41D2-A2CE-570A3ED10E33}
+		{743395A0-D9FE-4432-90F7-4FE550EDB39A} = {BAAFFA5A-0616-41D2-A2CE-570A3ED10E33}
+		{92B22526-C33F-4EFB-B3A6-FF43CC08ED42} = {BAAFFA5A-0616-41D2-A2CE-570A3ED10E33}
+		{33752672-EE67-4F8A-A9D3-76F8426B14CD} = {BAAFFA5A-0616-41D2-A2CE-570A3ED10E33}
+		{766E4074-94FF-4A63-9718-C6EB29F9FDFF} = {BAAFFA5A-0616-41D2-A2CE-570A3ED10E33}
+		{F93933FA-C429-4D78-BAB1-DA8E8BE96CFA} = {BAAFFA5A-0616-41D2-A2CE-570A3ED10E33}
+		{ACCED2C6-4392-4C5A-BFE1-373041BAADDD} = {E3227E52-5058-438C-942C-64B93E0EBB85}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17C356D5-D792-4895-A1E6-22B12C62B9A6}
+	EndGlobalSection
+EndGlobal
