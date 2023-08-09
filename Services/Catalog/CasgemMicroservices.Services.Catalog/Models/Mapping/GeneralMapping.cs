@@ -6,7 +6,7 @@ namespace CasgemMicroservices.Services.Catalog.Models.Mapping
 {
     public class GeneralMapping : Profile
     {
-        protected GeneralMapping()
+        public GeneralMapping()
         {
             CreateMap<Product, ResultProductDto>().ReverseMap();
             CreateMap<Product, CreateProductDto>().ReverseMap();
@@ -15,8 +15,7 @@ namespace CasgemMicroservices.Services.Catalog.Models.Mapping
             CreateMap<Category, ResultCategoryDto>().ReverseMap();
             CreateMap<Category, CreateCategoryDto>().ReverseMap();
             CreateMap<Category, UpdateCategoryDto>().ReverseMap();
-
-            
+     
         }
     }
 }

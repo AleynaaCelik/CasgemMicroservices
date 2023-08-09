@@ -6,6 +6,7 @@ namespace CasgemMicroservices.Services.Catalog.Models
     public class Product
     {
         [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
         public string ProductID { get; set; }
         public string ProductName { get; set; }
         [BsonRepresentation(BsonType.Decimal128)]
@@ -16,7 +17,7 @@ namespace CasgemMicroservices.Services.Catalog.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string CategoryID { get; set; }
         [BsonIgnore]
-        public Category  Category { get; set; }
+        public Category Category { get; set; }
 
 
     }
