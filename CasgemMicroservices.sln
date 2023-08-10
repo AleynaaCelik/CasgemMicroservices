@@ -39,9 +39,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Shared"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.IdentityServer", "IdentityServer\CasgemMicroservices.IdentityServer\CasgemMicroservices.IdentityServer.csproj", "{E722BF1C-DEA6-4BF9-8FE7-9BA46C0EAF75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Services.PhotoStock", "Services\PhotoStock\CasgemMicroservices.Services.PhotoStock\CasgemMicroservices.Services.PhotoStock.csproj", "{C2B0D465-CB16-4A86-A29B-1BB3ABB7C7AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Services.PhotoStock", "Services\PhotoStock\CasgemMicroservices.Services.PhotoStock\CasgemMicroservices.Services.PhotoStock.csproj", "{C2B0D465-CB16-4A86-A29B-1BB3ABB7C7AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Services.Basket", "Services\Basket\CasgemMicroservices.Services.Basket\CasgemMicroservices.Services.Basket.csproj", "{DEA092F4-0023-4849-B1A0-8436B3B794CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemMicroservices.Services.Basket", "Services\Basket\CasgemMicroservices.Services.Basket\CasgemMicroservices.Services.Basket.csproj", "{DEA092F4-0023-4849-B1A0-8436B3B794CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Services.Discount", "Services\Discount\CasgemMicroservices.Services.Discount\CasgemMicroservices.Services.Discount.csproj", "{B4A12275-66F5-4B9F-A098-DCB470E01F50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Services.Order", "Services\Order\CasgemMicroservices.Services.Order\CasgemMicroservices.Services.Order.csproj", "{B81396BA-AD01-4ED2-840C-BCBE3570BB73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Services.Order.Domain", "Services\Order\CasgemMicroservices.Services.Order.Domain\CasgemMicroservices.Services.Order.Domain.csproj", "{1A99B246-F0E2-4D28-AE44-BA7223ED13A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Services.Order.Application", "Services\Order\CasgemMicroservices.Services.Order.Application\CasgemMicroservices.Services.Order.Application.csproj", "{081AB809-6678-43E4-BA23-76C9B1C221B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemMicroservices.Services.Order.Infrastructure", "Services\Order\CasgemMicroservices.Services.Order.Infrastructure\CasgemMicroservices.Services.Order.Infrastructure.csproj", "{D1CC2B5A-66E8-421B-95C7-D47693FE94E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +79,26 @@ Global
 		{DEA092F4-0023-4849-B1A0-8436B3B794CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEA092F4-0023-4849-B1A0-8436B3B794CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEA092F4-0023-4849-B1A0-8436B3B794CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A12275-66F5-4B9F-A098-DCB470E01F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A12275-66F5-4B9F-A098-DCB470E01F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A12275-66F5-4B9F-A098-DCB470E01F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A12275-66F5-4B9F-A098-DCB470E01F50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B81396BA-AD01-4ED2-840C-BCBE3570BB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81396BA-AD01-4ED2-840C-BCBE3570BB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81396BA-AD01-4ED2-840C-BCBE3570BB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81396BA-AD01-4ED2-840C-BCBE3570BB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A99B246-F0E2-4D28-AE44-BA7223ED13A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A99B246-F0E2-4D28-AE44-BA7223ED13A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A99B246-F0E2-4D28-AE44-BA7223ED13A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A99B246-F0E2-4D28-AE44-BA7223ED13A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{081AB809-6678-43E4-BA23-76C9B1C221B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{081AB809-6678-43E4-BA23-76C9B1C221B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{081AB809-6678-43E4-BA23-76C9B1C221B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{081AB809-6678-43E4-BA23-76C9B1C221B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1CC2B5A-66E8-421B-95C7-D47693FE94E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1CC2B5A-66E8-421B-95C7-D47693FE94E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1CC2B5A-66E8-421B-95C7-D47693FE94E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1CC2B5A-66E8-421B-95C7-D47693FE94E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +116,11 @@ Global
 		{E722BF1C-DEA6-4BF9-8FE7-9BA46C0EAF75} = {2C454A32-7D49-4D99-A4BD-9E12D7591A63}
 		{C2B0D465-CB16-4A86-A29B-1BB3ABB7C7AA} = {766E4074-94FF-4A63-9718-C6EB29F9FDFF}
 		{DEA092F4-0023-4849-B1A0-8436B3B794CE} = {F646E18A-A59F-4995-9BD2-63902699C4DD}
+		{B4A12275-66F5-4B9F-A098-DCB470E01F50} = {743395A0-D9FE-4432-90F7-4FE550EDB39A}
+		{B81396BA-AD01-4ED2-840C-BCBE3570BB73} = {92B22526-C33F-4EFB-B3A6-FF43CC08ED42}
+		{1A99B246-F0E2-4D28-AE44-BA7223ED13A2} = {92B22526-C33F-4EFB-B3A6-FF43CC08ED42}
+		{081AB809-6678-43E4-BA23-76C9B1C221B0} = {92B22526-C33F-4EFB-B3A6-FF43CC08ED42}
+		{D1CC2B5A-66E8-421B-95C7-D47693FE94E1} = {92B22526-C33F-4EFB-B3A6-FF43CC08ED42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17C356D5-D792-4895-A1E6-22B12C62B9A6}
