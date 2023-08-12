@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CasgemMicroservices.Services.Order.Core.Application.Dtos.OrderDtos
 {
-    public class ResultOrderDto
+    public class ResultOrderingDto
     {
         public int OrderingID { get; set; }
         public string UserID { get; set; }

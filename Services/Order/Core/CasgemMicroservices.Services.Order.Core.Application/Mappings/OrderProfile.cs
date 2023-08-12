@@ -13,7 +13,7 @@ namespace CasgemMicroservices.Services.Order.Core.Application.Mappings
     {
         public OrderProfile()
         {
-            CreateMap<ResultOrderDto, Domain.Entities.Ordering>().ReverseMap();
+            CreateMap<ResultOrderingDto, Domain.Entities.Ordering>().ReverseMap();
             CreateMap<CreateOrderDto, Domain.Entities.Ordering>().ReverseMap();
             CreateMap<UpdateOrderDto, Domain.Entities.Ordering>().ReverseMap();
         }
