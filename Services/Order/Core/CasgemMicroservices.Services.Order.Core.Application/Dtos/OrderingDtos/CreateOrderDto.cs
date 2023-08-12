@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CasgemMicroservices.Services.Order.Core.Application.Dtos.OrderDtos
+namespace CasgemMicroservices.Services.Order.Core.Application.Dtos.OrderingDtos
 {
     public class CreateOrderDto
     {

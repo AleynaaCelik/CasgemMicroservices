@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CasgemMicroservices.Services.Order.Core.Application.Dtos.OrderDtos
 {
-    public class ResultOrderDto
+    public class UpdateOrderDto
     {
-        public int OrderID { get; set; }
+        public int OrderingID { get; set; }
         public string UserID { get; set; }
         public decimal TotalPrice { get; set; }
         public DateTime OrderDate { get; set; }

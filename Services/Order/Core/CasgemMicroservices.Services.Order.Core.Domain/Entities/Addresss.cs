@@ -8,7 +8,7 @@ namespace CasgemMicroservices.Services.Order.Core.Domain.Entities
 {
     public class Addresss
     {
-        public int AddressID { get; set; }
+        public int AddresssID { get; set; }
         public string UserID { get; set; }
         public string District { get; set; }
         public string City { get; set; }

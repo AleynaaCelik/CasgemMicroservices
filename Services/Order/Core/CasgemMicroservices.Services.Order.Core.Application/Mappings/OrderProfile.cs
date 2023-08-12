@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CasgemMicroservices.Services.Order.Core.Application.Dtos.OrderDtos;
+using CasgemMicroservices.Services.Order.Core.Application.Dtos.OrderingDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,9 @@ namespace CasgemMicroservices.Services.Order.Core.Application.Mappings
     {
         public OrderProfile()
         {
-            CreateMap<ResultOrderDto, Domain.Entities.Order>().ReverseMap();
-            CreateMap<CreateOrderDto, Domain.Entities.Order>().ReverseMap();
-            CreateMap<UpdateOrderDto, Domain.Entities.Order>().ReverseMap();
+            CreateMap<ResultOrderDto, Domain.Entities.Ordering>().ReverseMap();
+            CreateMap<CreateOrderDto, Domain.Entities.Ordering>().ReverseMap();
+            CreateMap<UpdateOrderDto, Domain.Entities.Ordering>().ReverseMap();
         }
     }
 }
