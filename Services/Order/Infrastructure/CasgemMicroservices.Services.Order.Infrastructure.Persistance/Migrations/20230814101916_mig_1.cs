@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CasgemMicroservices.Services.Order.Infrastructure.Persistance.Migrations
 {
-    public partial class initialize : Migration
+    public partial class mig_1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -50,24 +50,23 @@ namespace CasgemMicroservices.Services.Order.Infrastructure.Persistance.Migratio
                     ProductName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ProductPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     ProductAmount = table.Column<int>(type: "int", nullable: false),
-                    OrderingID = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    OrderingID1 = table.Column<int>(type: "int", nullable: false)
+                    OrderingID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_OrderDetails", x => x.OrderDetailID);
                     table.ForeignKey(
-                        name: "FK_OrderDetails_orders_OrderingID1",
-                        column: x => x.OrderingID1,
+                        name: "FK_OrderDetails_orders_OrderingID",
+                        column: x => x.OrderingID,
                         principalTable: "orders",
                         principalColumn: "OrderingID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_OrderDetails_OrderingID1",
+                name: "IX_OrderDetails_OrderingID",
                 table: "OrderDetails",
-                column: "OrderingID1");
+                column: "OrderingID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

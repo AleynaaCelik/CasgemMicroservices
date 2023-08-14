@@ -14,7 +14,7 @@ namespace CasgemMicroservices.Services.Order.Core.Application.Features.CQRS.Comm
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }
         public int ProductAmount { get; set; }
-        public string OrderingID { get; set; }
+        public int OrderingID { get; set; }
        
     }
 }

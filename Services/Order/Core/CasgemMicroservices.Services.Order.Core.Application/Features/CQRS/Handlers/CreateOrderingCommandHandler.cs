@@ -19,7 +19,7 @@ namespace CasgemMicroservices.Services.Order.Core.Application.Features.CQRS.Hand
             _repository = repository;
         }
 
-        public Task Handle(CreateOrderingCommandRequest request, CancellationToken cancellationToken)
+        public  Task Handle(CreateOrderingCommandRequest request, CancellationToken cancellationToken)
         {
             var values = new Ordering
             {
@@ -27,7 +27,7 @@ namespace CasgemMicroservices.Services.Order.Core.Application.Features.CQRS.Hand
                 OrderDate=Convert.ToDateTime(DateTime.Now.ToShortDateString()),
                 TotalPrice=request.TotalPrice
             };
-            return _repository.CreateAsync(values);
+            return  _repository.CreateAsync(values);
         }
     }
 }
