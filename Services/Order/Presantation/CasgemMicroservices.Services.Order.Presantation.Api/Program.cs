@@ -1,4 +1,8 @@
+using CasgemMicroservices.Services.Order.Core.Application;
+using CasgemMicroservices.Services.Order.Core.Application.Interfaceses;
 using CasgemMicroservices.Services.Order.Infrastructure.Persistance.Context;
+using CasgemMicroservices.Services.Order.Infrastructure.Persistance.Repository;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +13,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<OrderContext>();
-
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

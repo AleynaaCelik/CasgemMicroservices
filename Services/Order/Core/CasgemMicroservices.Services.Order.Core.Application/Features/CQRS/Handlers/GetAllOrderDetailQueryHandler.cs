@@ -24,9 +24,12 @@ namespace CasgemMicroservices.Services.Order.Core.Application.Features.CQRS.Hand
             _mapper = mapper;
         }
 
+   
+
         public async Task<List<ResultOrderDetailDto>> Handle(GetAllOrderDetailQueryRequest request, CancellationToken cancellationToken)
         {
-            var values = await  _repository.GetAllAsync();
+            var values = await _repository.GetAllAsync();
+
             return _mapper.Map<List<ResultOrderDetailDto>>(values);
         }
     }

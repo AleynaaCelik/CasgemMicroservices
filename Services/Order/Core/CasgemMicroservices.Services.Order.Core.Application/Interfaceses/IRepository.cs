@@ -10,9 +10,9 @@ namespace CasgemMicroservices.Services.Order.Core.Application.Interfaceses
     {
         Task<List<T>> GetAllAsync();
         Task<T> GetByIdAsync(int id);
-        Task<T> CreateAsync(T entity);
-        Task<T> UpdateAsync(T entity);
-        Task<T> DeleteAsync(T entity);
+        Task<T> CreateAsync(T t);
+        Task<T> UpdateAsync(T t);
+        Task<T> DeleteAsync(T t);
        
         
     }

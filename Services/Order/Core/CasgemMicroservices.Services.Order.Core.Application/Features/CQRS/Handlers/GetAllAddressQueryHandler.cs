@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using CasgemMicroservices.Services.Order.Core.Application.Dtos.AdsressDtos;
 using CasgemMicroservices.Services.Order.Core.Application.Dtos.OrderDetailsDtos;
-using CasgemMicroservices.Services.Order.Core.Application.Dtos.OrderDtos;
 using CasgemMicroservices.Services.Order.Core.Application.Features.CQRS.Queries;
 using CasgemMicroservices.Services.Order.Core.Application.Interfaceses;
 using CasgemMicroservices.Services.Order.Core.Domain.Entities;
@@ -16,10 +15,11 @@ namespace CasgemMicroservices.Services.Order.Core.Application.Features.CQRS.Hand
 {
     public class GetAllAddressQueryHandler : IRequestHandler<GetAllAddressQueryRequest, List<ResultAddressDto>>
     {
-        private readonly IRepository<Addresss> _repository;
+
+        private readonly IRepository<OrderDetail> _repository;
         private readonly IMapper _mapper;
 
-        public GetAllAddressQueryHandler(IRepository<Addresss> repository, IMapper mapper)
+        public GetAllAddressQueryHandler(IRepository<OrderDetail> repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
@@ -27,7 +27,9 @@ namespace CasgemMicroservices.Services.Order.Core.Application.Features.CQRS.Hand
 
         public async Task<List<ResultAddressDto>> Handle(GetAllAddressQueryRequest request, CancellationToken cancellationToken)
         {
+
             var values = await _repository.GetAllAsync();
+
             return _mapper.Map<List<ResultAddressDto>>(values);
         }
     }

@@ -1,4 +1,4 @@
-﻿using CasgemMicroservices.Services.Order.Core.Application.Dtos.OrderDetailsDtos;
+﻿using CasgemMicroservices.Services.Order.Core.Application.Dtos.AdsressDtos;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CasgemMicroservices.Services.Order.Core.Application.Features.CQRS.Queries
 {
-    public class GetAllOrderDetailQueryRequest : IRequest<List<ResultOrderDetailDto>>
+    public class CreateAddressCommandRequest : IRequest<CreateAddressDto>
     {
     }
 }
