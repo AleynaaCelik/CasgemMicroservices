@@ -16,10 +16,10 @@ namespace CasgemMicroservices.Services.Order.Core.Application.Features.CQRS.Hand
     public class GetAllAddressQueryHandler : IRequestHandler<GetAllAddressQueryRequest, List<ResultAddressDto>>
     {
 
-        private readonly IRepository<OrderDetail> _repository;
+        private readonly IRepository<Addresss> _repository;
         private readonly IMapper _mapper;
 
-        public GetAllAddressQueryHandler(IRepository<OrderDetail> repository, IMapper mapper)
+        public GetAllAddressQueryHandler(IRepository<Addresss> repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;

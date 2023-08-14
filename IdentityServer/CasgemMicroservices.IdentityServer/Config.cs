@@ -16,6 +16,7 @@ namespace CasgemMicroservices.IdentityServer
             new ApiResource("resource_photostock"){Scopes={ "photostock_fullpermission" } },
             new ApiResource("resource_basket"){Scopes={ "basket_fullpermission" } },
             new ApiResource("resource_discount"){Scopes={ "discount_fullpermission" } },
+            new ApiResource("resource_order"){Scopes={ "order_fullpermission" } },
                 new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
             
         };
@@ -34,6 +35,7 @@ namespace CasgemMicroservices.IdentityServer
                  new ApiScope("photostock_fullpermission","Fotoğraf işlemleri  için tam erişim"),
                  new ApiScope("basket_fullpermission","Sepet  için tam erişim"),
                  new ApiScope("discount_fullpermission","İndirim  için tam erişim"),
+                 new ApiScope("order_fullpermission","Sipariş İşlermleri  için tam erişim"),
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -60,7 +62,7 @@ namespace CasgemMicroservices.IdentityServer
                     ClientName = "Casgem2 Client Name", 
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword, //Kendi şifresini belirlesin
                     AllowOfflineAccess = true, //internet olmadan da kullanılsın token
-                    AllowedScopes = { "catalog_fullpermission", "photostock_fullpermission", "basket_fullpermission", "discount_fullpermission", IdentityServerConstants.LocalApi.ScopeName,IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile },AccessTokenLifetime=3600
+                    AllowedScopes = { "catalog_fullpermission", "photostock_fullpermission", "basket_fullpermission", "discount_fullpermission", "order_fullpermission",IdentityServerConstants.LocalApi.ScopeName,IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile },AccessTokenLifetime=3600
                     //IdentityServerConstants token içeriğini mail ıd ve şifre bilgilerini gönderecek asp net user tablo bilgilerini alacak 
                 },
             };
