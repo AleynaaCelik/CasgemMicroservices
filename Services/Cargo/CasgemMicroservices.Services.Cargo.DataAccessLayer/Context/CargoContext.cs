@@ -12,7 +12,7 @@ namespace CasgemMicroservices.Services.Cargo.DataAccessLayer.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=CasgemOrderDb;User=sa;Password=123456Aa*");
+            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=CasgemCargoDb;User=sa;Password=123456Aa*");
         }
         public DbSet<CargoState> CargoStates{get;set;}
         public DbSet<CargoDetail> CargoDetails{get;set;}
