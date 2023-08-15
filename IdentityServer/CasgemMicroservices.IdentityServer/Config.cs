@@ -18,6 +18,8 @@ namespace CasgemMicroservices.IdentityServer
             new ApiResource("resource_discount"){Scopes={ "discount_fullpermission" } },
             new ApiResource("resource_order"){Scopes={ "order_fullpermission" } },
             new ApiResource("resource_cargo"){Scopes={ "cargo_fullpermission" } },
+            new ApiResource("resource_payment"){Scopes={ "payment_fullpermission" } },
+            new ApiResource("resource_gateway"){Scopes={ "gateway_fullpermission" } },
                 new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
             
         };
@@ -38,6 +40,8 @@ namespace CasgemMicroservices.IdentityServer
                  new ApiScope("discount_fullpermission","İndirim  için tam erişim"),
                  new ApiScope("order_fullpermission","Sipariş İşlermleri  için tam erişim"),
                  new ApiScope("cargo_fullpermission","Kargo İşlermleri  için tam erişim"),
+                 new ApiScope("payment_fullpermission","Ödeme İşlermleri  için tam erişim"),
+                 new ApiScope("gateway_fullpermission","Kargo İşlermleri  için tam erişim"),
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -53,7 +57,7 @@ namespace CasgemMicroservices.IdentityServer
                     ClientName = "Casgem Client Name",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = { new Secret("secret".Sha256()) }, 
-                    AllowedScopes = { "catalog_fullpermission", "photostock_fullpermission",IdentityServerConstants.LocalApi.ScopeName }
+                    AllowedScopes = { "catalog_fullpermission", "photostock_fullpermission", "gateway_fullpermission", IdentityServerConstants.LocalApi.ScopeName }
 
                 },
 
@@ -64,7 +68,7 @@ namespace CasgemMicroservices.IdentityServer
                     ClientName = "Casgem2 Client Name", 
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword, //Kendi şifresini belirlesin
                     AllowOfflineAccess = true, //internet olmadan da kullanılsın token
-                    AllowedScopes = { "catalog_fullpermission", "photostock_fullpermission", "basket_fullpermission", "discount_fullpermission", "order_fullpermission", "cargo_fullpermission", IdentityServerConstants.LocalApi.ScopeName,IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile },AccessTokenLifetime=3600
+                    AllowedScopes = { "catalog_fullpermission", "photostock_fullpermission", "basket_fullpermission", "discount_fullpermission", "order_fullpermission", "cargo_fullpermission", "payment_fullpermission", "gateway_fullpermission", IdentityServerConstants.LocalApi.ScopeName,IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile },AccessTokenLifetime=3600
                     //IdentityServerConstants token içeriğini mail ıd ve şifre bilgilerini gönderecek asp net user tablo bilgilerini alacak 
                 },
             };
